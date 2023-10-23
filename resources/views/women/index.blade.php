@@ -37,8 +37,8 @@
                 <td style="word-wrap: break-word;" scope="row">{{$woman->birth_date}}</td>
                 <td>
                     <div class="d-flex justify-content-between align-content-center" role="group" aria-label="Basic mixed styles example">
-                        <a class="btn btn-primary" href="{{route('women.show', $woman->id)}}"><i class="fa-solid fa-circle-info"></i></a>
-                        <a class="btn btn-warning" href="{{route('women.edit', $woman->id)}}"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a class="btn btn-primary me-2" href="{{route('women.show', $woman->id)}}"><i class="fa-solid fa-circle-info"></i></a>
+                        <a class="btn btn-warning me-2" href="{{route('women.edit', $woman->id)}}"><i class="fa-solid fa-pen-to-square"></i></a>
                         <button type="button" class="btn btn-danger border-0" data-bs-toggle="modal" data-bs-target="#modalId{{$woman->id}}"><i class="fa-solid fa-trash"></i></button>
                         <!-- <button type="button" class="btn btn-success">Right</button> -->
                     </div>

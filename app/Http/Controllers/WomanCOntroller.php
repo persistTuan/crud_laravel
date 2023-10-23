@@ -33,7 +33,7 @@ class WomanCOntroller extends Controller
      */
     public function store(Request $request)
     {
-        $date = carbon::parse($request->get("woman_birthDay"))->format('Y-m-d');
+        $date = Carbon::parse($request->get("woman_birthDay"))->format('Y-m-d');
         // echo $date;
         $result =  DB::insert("INSERT into women(women.name, biography, field_of_work, women.image, birth_date, updated_at) values(?,?,?,?,?,?)",[
             $request->get("woman_name"), $request->get("woman_biography"), $request->get("woman_fieldOfWork"),$request->get("woman_image"), $date, Carbon::now("Asia/Ho_Chi_Minh")
